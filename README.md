@@ -2,6 +2,9 @@
 
 This is a command line tool to easily enable/disable port proxies and firewalls.
 
+> [!NOTE]
+> Support for Winsows only.
+
 ## Install
 
 ```shellsession
