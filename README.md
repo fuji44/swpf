@@ -7,7 +7,7 @@ This is a command line tool to easily enable/disable port proxies and firewalls.
 
 ## Install
 
-```shellsession
+```shell
 deno task install 
 ```
 
@@ -27,7 +27,7 @@ fwRuleName = "my-app-server"
 
 ### Execute
 
-```shellsession
+```shell
 # Show port proxy and firewall status for choice configured service
 swpf status my-app-server
 
