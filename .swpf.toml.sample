@@ -1,0 +1,5 @@
+[my-app-server]
+listenAddr = "192.168.0.1"
+connectAddr = "127.0.0.1"
+bindPorts = [8080]
+fwRuleName = "my-app-server"

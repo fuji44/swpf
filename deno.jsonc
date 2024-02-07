@@ -1,0 +1,11 @@
+{
+  "lock": false,
+  "tasks": {
+    "compile": "deno compile --allow-run --allow-read --allow-env --target x86_64-pc-windows-msvc --output dist/swpf main.ts",
+    "install": "deno install --allow-run --allow-read --allow-env -c ./deno.jsonc --name swpf main.ts",
+    "uninstall": "deno uninstall swpf"
+  },
+  "imports": {
+    "std/": "https://deno.land/std@0.214.0/"
+  }
+}
