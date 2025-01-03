@@ -36,10 +36,10 @@ async function execCommand(command: Deno.Command) {
     return;
   }
   if (stdout) {
-    console.log(new TextDecoder("shift-jis").decode(stdout));
+    console.log(new TextDecoder("utf8").decode(stdout));
   }
   if (stderr) {
-    console.error(new TextDecoder("shift-jis").decode(stderr));
+    console.error(new TextDecoder("utf8").decode(stderr));
   }
   Deno.exit(code);
 }
@@ -55,10 +55,10 @@ async function printPortProxy() {
   });
   const { code, stdout, stderr } = await command.output();
   if (stdout) {
-    console.log(new TextDecoder("shift-jis").decode(stdout));
+    console.log(new TextDecoder("utf8").decode(stdout));
   }
   if (stderr) {
-    console.error(new TextDecoder("shift-jis").decode(stderr));
+    console.error(new TextDecoder("utf8").decode(stderr));
   }
   if (code !== 0) {
     Deno.exit(code);
@@ -118,10 +118,10 @@ async function printFirewall(ruleName: string) {
   });
   const { code, stdout, stderr } = await command.output();
   if (stdout) {
-    console.log(new TextDecoder("shift-jis").decode(stdout));
+    console.log(new TextDecoder("utf8").decode(stdout));
   }
   if (stderr) {
-    console.error(new TextDecoder("shift-jis").decode(stderr));
+    console.error(new TextDecoder("utf8").decode(stderr));
   }
   if (code !== 0) {
     Deno.exit(code);
