@@ -1,5 +1,5 @@
-import { join } from "std/path/mod.ts";
-import { parse } from "std/toml/mod.ts";
+import { join } from "@std/path/join";
+import { parse } from "@std/toml/parse";
 import dir from "https://deno.land/x/dir@1.5.2/mod.ts";
 
 const configFileName = ".swpf.toml";

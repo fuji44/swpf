@@ -1,4 +1,4 @@
-import { parseArgs } from "std/cli/mod.ts";
+import { parseArgs } from "@std/cli/parse-args";
 import { getConfig } from "./config.ts";
 
 const subCommands = [
